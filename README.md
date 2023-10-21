@@ -3,6 +3,7 @@
 C program using open, read, write, close , create , fork() system calls
 # THEORY :
 There are 5 basic system calls that Unix provides for file I/O.
+
 1.Create: Used to Create a new empty file Syntax :int creat(char *filename, mode_t mode) filename : name of the file which you want to create mode : indicates permissions of new file.
 
 2.open: Used to Open the file for reading, writing or both. Syntax: int open(char *path, int flags [ , int mode ] ); Path : path to file which you want to use flags : How you like to use O_RDONLY: read only, O_WRONLY: write only, O_RDWR: read and write, O_CREAT: create file if it doesn’t exist, O_EXCL: prevent creation if it already exists
@@ -15,12 +16,19 @@ There are 5 basic system calls that Unix provides for file I/O.
 
 # ALGORITHM:
 1.Star the program.
+
 2.Open a file for O_RDWR for R/W,O_CREATE for creating a file ,O_TRUNC for truncate a file.
+
 3.Using getchar(), read the character and stored in the string[] array.
+
 4.The string [] array is write into a file close it.
+
 5.Then the first is opened for read only mode and read the characters and displayed it and close the file.
+
 6.Use Fork().
+
 7.Stop the program.
+
 # PROGRAM:
 ```
 #include<sys/stat.h> 
